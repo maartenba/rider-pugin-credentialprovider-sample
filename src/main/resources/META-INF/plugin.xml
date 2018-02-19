@@ -1,0 +1,18 @@
+<idea-plugin>
+  <id>org.jetbrains.rider.example.nuget.credentialprovider</id>
+  <name>Example Credential Provider for Rider</name>
+  <version>0.0.0.1</version>
+
+  <idea-version since-build="181.3255" until-build="181.3255.*" />
+
+  <depends>com.intellij.modules.rider</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <nugetCredentialProvider implementation="org.jetbrains.rider.example.nuget.credentialprovider.ExampleNuGetCredentialProvider" />
+  </extensions>
+
+  <description><![CDATA[
+<p>An example NuGet credential provider for JetBrains Rider.</p>
+]]>
+  </description>
+</idea-plugin>
